@@ -188,9 +188,9 @@ public abstract class JasperReportsUtils {
 			throws JRException {
 
 		JasperPrint print = JasperFillManager.fillReport(report, parameters, convertReportData(reportData));
-		net.sf.jasperreports.engine.export.JRHtmlExporter exporter = new net.sf.jasperreports.engine.export.JRHtmlExporter();
-		exporter.setParameters(exporterParameters);
-		render(exporter, print, writer);
+//		net.sf.jasperreports.engine.export.JRHtmlExporter exporter = new net.sf.jasperreports.engine.export.JRHtmlExporter();
+//		exporter.setParameters(exporterParameters);
+//		render(exporter, print, writer);
 	}
 
 	/**

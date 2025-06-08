@@ -7,5 +7,9 @@ class App {
         ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
         FirstService firstService = context.getBean("firstService", FirstService.class);
         System.out.println(firstService.getInfo());
+
+        //context  getEnvironment().resolveRequiredPlaceholders(path)
+
+        //XmlWebApplicationContext   obtainFreshBeanFactory   beanDefinitionReader.setEnvironment(getEnvironment());
     }
 }
